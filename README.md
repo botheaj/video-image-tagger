@@ -1,4 +1,4 @@
-# image-reader
+# video-image-tagger
 
 Finds a product from a reference photo in a video. It samples the video's frames
 and asks TypeSafe's Jev model about each one: is the product in this frame, and
@@ -38,7 +38,7 @@ and once cropped to it.
 Copy this prompt into Claude Code or another coding agent, and fill in the two placeholders:
 
 ```text
-Use the image-reader CLI (https://github.com/botheaj/image-reader) to check whether
+Use the image-reader CLI from https://github.com/botheaj/video-image-tagger to check whether
 the product in <PATH TO PRODUCT IMAGE> appears in <VIDEO FILE PATH OR URL>.
 
 1. If it isn't already present, clone the repo and cd into it. Make sure `cargo`, `ffmpeg`
