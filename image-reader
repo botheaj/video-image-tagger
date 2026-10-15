@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Builds (if the code changed) and runs the tool, so ./image-reader always runs the latest code.
+exec cargo run --release --quiet --manifest-path "$(dirname "$0")/Cargo.toml" -- "$@"
